@@ -1,0 +1,69 @@
+---
+// src/components/MiyoSection.astro
+---
+
+<div class="background">
+    <div class="content">
+        <h1>Descubre cómo Miyo puede transformar tu manera de aprender</h1>
+        <div class="categories">
+            <div class="category">
+                <img src="/images/finanzas.png" alt="Finanzas Personales e Inversiones">
+                <p>Finanzas Personales e Inversiones</p>
+            </div>
+            <div class="category">
+                <img src="/images/deportes.png" alt="Deportes">
+                <p>Deportes</p>
+            </div>
+            <div class="category">
+                <img src="/images/crecimiento.png" alt="Crecimiento">
+                <p>Crecimiento</p>
+            </div>
+            <div class="category">
+                <img src="/images/productividad.png" alt="Productividad">
+                <p>Productividad</p>
+            </div>
+            <div class="category">
+                <img src="/images/salud.png" alt="Salud y Bienestar">
+                <p>Salud y Bienestar</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .background {
+        background-image: url('/onda.png');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f0f0f0; /* Fondo suave */
+    }
+
+    .content {
+        text-align: center;
+        color: #333;
+    }
+
+    .categories {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+    .category {
+        text-align: center;
+    }
+
+    .category img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .category p {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+</style>
