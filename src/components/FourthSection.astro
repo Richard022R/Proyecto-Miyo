@@ -1,69 +1,62 @@
 ---
-// src/components/MiyoSection.astro
+
 ---
 
-<div class="background">
-    <div class="content">
-        <h1>Descubre cómo Miyo puede transformar tu manera de aprender</h1>
-        <div class="categories">
-            <div class="category">
-                <img src="/images/finanzas.png" alt="Finanzas Personales e Inversiones">
-                <p>Finanzas Personales e Inversiones</p>
-            </div>
-            <div class="category">
-                <img src="/images/deportes.png" alt="Deportes">
-                <p>Deportes</p>
-            </div>
-            <div class="category">
-                <img src="/images/crecimiento.png" alt="Crecimiento">
-                <p>Crecimiento</p>
-            </div>
-            <div class="category">
-                <img src="/images/productividad.png" alt="Productividad">
-                <p>Productividad</p>
-            </div>
-            <div class="category">
-                <img src="/images/salud.png" alt="Salud y Bienestar">
-                <p>Salud y Bienestar</p>
-            </div>
-        </div>
+<div class="overflow-hidden">
+  <h1
+    class="text-5xl text-center text-miyo-primary leading-relaxed mx-auto font-medium mb-32 mt-20 max-w-[800px]"
+  >
+    Descubre cómo Miyo puede transformar tu manera de aprender
+  </h1>
+  <div class="relative">
+    <div class="absolute w-full flex justify-around items-center">
+      <div class="flex flex-col gap-4 justify-center items-center max-w-[165px] text-center -ml-12">
+        <img
+          class="w-[135px] h-[135px] rounded-full object-cover object-center"
+          width="135px"
+          src="/onda.png"
+          alt="Ondas de sonido"
+        />
+        <p>Crecimiento Personal y Productividad</p>
+      </div>
+      <div class="flex flex-col gap-4 justify-center items-center max-w-[165px] text-center -mb-24 -ml-32">
+        <p>Finanzas Personales e Inversiones</p>
+        <img
+          class="w-[135px] h-[135px] rounded-full object-cover object-center"
+          width="135px"
+          src="/onda.png"
+          alt="Ondas de sonido"
+        />
+      </div>
+      <div class="flex flex-col gap-4 justify-center items-center max-w-[165px] text-center -mb-80 -ml-32">
+        <p>Emprendimiento</p>
+        <img
+          class="w-[135px] h-[135px] rounded-full object-cover object-center"
+          width="135px"
+          src="/onda.png"
+          alt="Ondas de sonido"
+        />
+      </div>
+      <div class="flex flex-col gap-4 justify-center items-center max-w-[165px] text-center">
+        <img
+          class="w-[135px] h-[135px] rounded-full object-cover object-center"
+          width="135px"
+          src="/onda.png"
+          alt="Ondas de sonido"
+        />
+        <p>Salud y Bienestar</p>
+      </div>
+      <div class="flex flex-col gap-4 justify-center items-center max-w-[165px] text-center">
+        <img
+          class="w-[135px] h-[135px] rounded-full object-cover object-center"
+          width="135px"
+          src="/onda.png"
+          alt="Ondas de sonido"
+        />
+        <p>Deportes</p>
+      </div>
     </div>
+
+    <img class="-mb-[21%]" src="/onda.png" alt="Ondas de sonido" />
+  </div>
 </div>
-
-<style>
-    .background {
-        background-image: url('/onda.png');
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #f0f0f0; /* Fondo suave */
-    }
-
-    .content {
-        text-align: center;
-        color: #333;
-    }
-
-    .categories {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 20px;
-    }
-
-    .category {
-        text-align: center;
-    }
-
-    .category img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .category p {
-        margin-top: 10px;
-        font-size: 14px;
-    }
-</style>
