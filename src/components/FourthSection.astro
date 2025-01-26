@@ -1,62 +1,117 @@
 ---
 
 ---
+<div class="overflow-hidden relative">
+  <!-- Sección para desktop -->
+  <div class="hidden md:block px-12">
+    <h1
+      class="text-5xl text-center text-miyo-primary leading-relaxed mx-auto font-bold mb-32 mt-20 max-w-[800px]"
+    >
+      Descubre cómo Miyo puede transformar tu manera de aprender
+    </h1>
+    <div class="relative">
+      <div class="absolute w-full flex justify-around items-center">
+        <div class="flex flex-col gap-4 justify-center items-center max-w-[140px] font-bold text-miyo-primary text-center -ml-20">
+          <img
+            class="w-[135px] h-[135px] rounded-full object-cover object-center"
+            src="/FourthSection/person.webp"
+            alt="Ondas de sonido"
+          />
+          <p>Crecimiento Personal y Productividad</p>
+        </div>
+        <div class="flex flex-col gap-4 justify-center items-center max-w-[165px] font-bold text-miyo-primary text-center -mb-20 -ml-16">
+          <p>Finanzas Personales e Inversiones</p>
+          <img
+            class="w-[135px] h-[135px] rounded-full object-cover object-center"
+            src="/FourthSection/dolar.webp"
+            alt="Ondas de sonido"
+          />
+        </div>
+        <div class="flex flex-col gap-4 justify-center items-center max-w-[165px] font-bold text-miyo-primary text-center -mb-56 -ml-28">
+          <p>Emprendimiento</p>
+          <img
+            class="w-[135px] h-[135px] rounded-full object-cover object-center"
+            src="/FourthSection/person2.jpg"
+            alt="Ondas de sonido"
+          />
+        </div>
+        <div class="flex flex-col gap-4 justify-center items-center max-w-[165px] font-bold text-miyo-primary text-center -mt-8 -ml-40">
+          <img
+            class="w-[135px] h-[135px] rounded-full object-cover object-center"
+            src="/FourthSection/salud.webp"
+            alt="Ondas de sonido"
+          />
+          <p>Salud y Bienestar</p>
+        </div>
+        <div class="flex flex-col gap-4 justify-center items-center max-w-[165px] font-bold text-miyo-primary text-center mr-24 -mt-28">
+          <img
+            class="w-[135px] h-[135px] rounded-full object-cover object-center"
+            src="/FourthSection/ejercicio.webp"
+            alt="Ondas de sonido"
+          />
+          <p>Deportes</p>
+        </div>
+      </div>
+      <img class="-mb-[21%]" src="/onda.png" alt="Ondas de sonido" />
+    </div>
+  </div>
 
-<div class="overflow-hidden">
+
+  <!-- Sección para mobile -->
+<div class="block md:hidden px-4 relative">
   <h1
-    class="text-5xl text-center text-miyo-primary leading-relaxed mx-auto font-medium mb-32 mt-20 max-w-[800px]"
+    class="text-4xl text-center text-miyo-primary leading-relaxed mx-auto font-bold mb-16 mt-12 max-w-[800px]"
   >
     Descubre cómo Miyo puede transformar tu manera de aprender
   </h1>
-  <div class="relative">
-    <div class="absolute w-full flex justify-around items-center">
-      <div class="flex flex-col gap-4 justify-center items-center max-w-[165px] text-center -ml-12">
-        <img
-          class="w-[135px] h-[135px] rounded-full object-cover object-center"
-          width="135px"
-          src="/onda.png"
-          alt="Ondas de sonido"
-        />
-        <p>Crecimiento Personal y Productividad</p>
-      </div>
-      <div class="flex flex-col gap-4 justify-center items-center max-w-[165px] text-center -mb-24 -ml-32">
-        <p>Finanzas Personales e Inversiones</p>
-        <img
-          class="w-[135px] h-[135px] rounded-full object-cover object-center"
-          width="135px"
-          src="/onda.png"
-          alt="Ondas de sonido"
-        />
-      </div>
-      <div class="flex flex-col gap-4 justify-center items-center max-w-[165px] text-center -mb-80 -ml-32">
-        <p>Emprendimiento</p>
-        <img
-          class="w-[135px] h-[135px] rounded-full object-cover object-center"
-          width="135px"
-          src="/onda.png"
-          alt="Ondas de sonido"
-        />
-      </div>
-      <div class="flex flex-col gap-4 justify-center items-center max-w-[165px] text-center">
-        <img
-          class="w-[135px] h-[135px] rounded-full object-cover object-center"
-          width="135px"
-          src="/onda.png"
-          alt="Ondas de sonido"
-        />
-        <p>Salud y Bienestar</p>
-      </div>
-      <div class="flex flex-col gap-4 justify-center items-center max-w-[165px] text-center">
-        <img
-          class="w-[135px] h-[135px] rounded-full object-cover object-center"
-          width="135px"
-          src="/onda.png"
-          alt="Ondas de sonido"
-        />
-        <p>Deportes</p>
-      </div>
+  <!-- Contenedor circular -->
+  <div class="relative w-[300px] h-[300px] mx-auto">
+    <!-- Elementos alrededor del círculo -->
+    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 flex flex-col items-center">
+      <img
+        class="w-[90px] h-[90px] rounded-full object-cover object-center"
+        src="/FourthSection/person.webp"
+        alt="Crecimiento Personal"
+      />
+      <p class="text-sm text-center text-miyo-primary font-bold mt-2">Crecimiento Personal y Productividad</p>
     </div>
-
-    <img class="-mb-[21%]" src="/onda.png" alt="Ondas de sonido" />
+    <div class="absolute top-[25%] right-0 transform translate-x-1/2 flex flex-col items-center">
+      <img
+        class="w-[90px] h-[90px] rounded-full object-cover object-center"
+        src="/FourthSection/dolar.webp"
+        alt="Finanzas Personales"
+      />
+      <p class="text-sm text-center text-miyo-primary font-bold mt-2">Finanzas Personales e Inversiones</p>
+    </div>
+    <div class="absolute bottom-0 right-[15%] transform translate-x-1/2 flex flex-col items-center">
+      <img
+        class="w-[90px] h-[90px] rounded-full object-cover object-center"
+        src="/FourthSection/person2.jpg"
+        alt="Emprendimiento"
+      />
+      <p class="text-sm text-center text-miyo-primary font-bold mt-2">Emprendimiento</p>
+    </div>
+    <div class="absolute bottom-0 left-[15%] transform -translate-x-1/2 flex flex-col items-center">
+      <img
+        class="w-[90px] h-[90px] rounded-full object-cover object-center"
+        src="/FourthSection/salud.webp"
+        alt="Salud y Bienestar"
+      />
+      <p class="text-sm text-center text-miyo-primary font-bold mt-2">Salud y Bienestar</p>
+    </div>
+    <div class="absolute top-[25%] left-0 transform -translate-x-1/2 flex flex-col items-center">
+      <img
+        class="w-[90px] h-[90px] rounded-full object-cover object-center"
+        src="/FourthSection/ejercicio.webp"
+        alt="Deportes"
+      />
+      <p class="text-sm text-center text-miyo-primary font-bold mt-2">Deportes</p>
+    </div>
+  </div>
+  <!-- Fondo central -->
+  <div class="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] bg-miyo-secondary rounded-full flex items-center justify-center">
+    <img src="/onda.png" alt="Ondas de sonido" />
   </div>
 </div>
+
+
