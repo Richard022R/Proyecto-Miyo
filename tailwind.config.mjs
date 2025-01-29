@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				'miyo-primary': '#5E17EB',
+				'miyo-primary': '#5E17EA',
 			}
 		},
 	},
