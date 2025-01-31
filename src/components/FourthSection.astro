@@ -1,70 +1,85 @@
 ---
-
+import ItemOnda from "./ItemOnda.astro";
 ---
 
-<div class="overflow-hidden min-h-screen relative">
+<div class="overflow-hidden min-h-screen relative flex">
   <!-- Sección para desktop -->
-  <div class="hidden lg:block px-12">
+  <div class="sm:px-12 flex flex-col justify-between flex-1">
     <h1
-      class="text-5xl text-center text-miyo-primary leading-relaxed mx-auto font-bold mb-32 mt-20 max-w-[800px]"
+      class="px-10 sm:px-0 text-xl sm:text-3xl lg:text-5xl text-center text-miyo-primary leading-relaxed mx-auto font-bold my-10 lg:mb-32 lg:mt-20 max-w-[800px]"
     >
       Descubre cómo Miyo puede transformar tu manera de aprender
     </h1>
-    <div class="relative border border-black">
-      <div class="absolute w-full flex justify-around items-center">
-        <div
-          class="flex flex-col gap-4 justify-center items-center max-w-[140px] font-bold text-miyo-primary text-center -ml-20"
-        >
-          <img
-            class="w-[135px] h-[135px] rounded-full object-cover object-center"
-            src="/FourthSection/person.webp"
-            alt="Ondas de sonido"
-          />
-          <p>Crecimiento Personal y Productividad</p>
-        </div>
-        <div
-          class="flex flex-col gap-4 justify-center items-center max-w-[165px] font-bold text-miyo-primary text-center -mb-20 -ml-16"
-        >
-          <p>Finanzas Personales e Inversiones</p>
-          <img
-            class="w-[135px] h-[135px] rounded-full object-cover object-center"
-            src="/FourthSection/dolar.webp"
-            alt="Ondas de sonido"
-          />
-        </div>
-        <div
-          class="flex flex-col gap-4 justify-center items-center max-w-[165px] font-bold text-miyo-primary text-center -mb-56 -ml-28"
-        >
-          <p>Emprendimiento</p>
-          <img
-            class="w-[135px] h-[135px] rounded-full object-cover object-center"
-            src="/FourthSection/person2.jpg"
-            alt="Ondas de sonido"
-          />
-        </div>
-        <div
-          class="flex flex-col border border-black gap-4 justify-center items-center max-w-[165px] font-bold text-miyo-primary text-center"
-        >
-          <img
-            class="w-[135px] h-[135px] rounded-full object-cover object-center"
-            src="/FourthSection/salud.webp"
-            alt="Ondas de sonido"
-          />
-          <p>Salud y Bienestar</p>
-        </div>
-        <div
-          class="flex flex-col gap-4 justify-center items-center max-w-[165px] font-bold text-miyo-primary text-center mr-24 -mt-40"
-        >
-          <img
-            class="w-[135px] h-[135px] rounded-full object-cover object-center"
-            src="/FourthSection/ejercicio.webp"
-            alt="Ondas de sonido"
-          />
-          <p>Deportes</p>
-        </div>
-      </div>
+
+    <div class="relative w-full hidden lg:block">
+      <ItemOnda
+        image="person.webp"
+        title="Crecimiento Personal y Productividad"
+        position="top-[10%] left-0"
+      />
+      <ItemOnda
+        image="dolar.webp"
+        title="Finanzas Personales e Inversiones"
+        abajoImg={true}
+        position="top-[8%] left-[23%]"
+      />
+      <ItemOnda
+        image="person2.jpg"
+        title="Emprendimiento"
+        abajoImg={true}
+        position="top-[35%] left-[39%]"
+      />
+      <ItemOnda
+        image="salud.webp"
+        title="Salud y Bienestar"
+        abajoImg={false}
+        position="top-0 right-[37%]"
+      />
+      <ItemOnda
+        image="ejercicio.webp"
+        title="Deportes"
+        abajoImg={false}
+        position="-top-[7%] right-[15%]"
+      />
       <img class="-mb-[21%]" src="/onda.png" alt="Ondas de sonido" />
     </div>
-  </div>
 
-  
+    <div class="relative w-full  lg:hidden block max-w-[740px] mx-auto my-[200px]">
+      <ItemOnda
+        image="person.webp"
+        title="Crecimiento Personal y Productividad"
+        abajoImg={true}
+        position="-top-[50%] sm:-top-[30%] md:-top-[15%] left-[10%]"
+      />
+      <ItemOnda
+        image="dolar.webp"
+        title="Finanzas Personales e Inversiones"
+        abajoImg={true}
+        position="-top-[44%] sm:-top-[3%] left-[42%] sm:left-[36%]"
+      />
+      <ItemOnda
+        image="person2.jpg"
+        title="Emprendimiento"
+        abajoImg={true}
+        position="-top-[50%] sm:-top-[30%] right-[10%] sm:right-[25%]"
+      />
+      <ItemOnda
+        image="salud.webp"
+        title="Salud y Bienestar"
+        abajoImg={false}
+        position="-bottom-[40%] sm:-bottom-[12%] left-[13%] sm:left-[17%]" 
+      />
+      <ItemOnda
+        image="ejercicio.webp"
+        title="Deportes"
+        abajoImg={false}
+        position="-bottom-[50%] sm:-bottom-[25%] right-[15%]"
+      />
+      <img class="" src="/onda.png" alt="Ondas de sonido" />
+    </div>
+
+    <a href="#" class="lg:hidden bg-miyo-primary rounded-full text-white  sm:text-xl font-semibold text-center w-3/4 mx-auto py-3 mb-5">
+      Unirme
+    </a>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+---
+const { image, title, abajoImg=false, position } = Astro.props;
+---
+
+<div
+  class=`absolute flex flex-col gap-4 justify-center items-center min-w-[60px] w-[10%] lg:w-[10%] h-[15%] font-bold text-miyo-primary text-center ${position}`
+>
+  <div class=`relative aspect-square w-full ${abajoImg ? "order-last" : ""}`>
+    <img
+      class="rounded-full w-full h-full object-cover object-center"
+      src=`/FourthSection/${image}` 
+      alt="Ondas de sonido"
+    />
+  </div>
+  <p class="md:text-lg flex">{title}</p>
+</div>
